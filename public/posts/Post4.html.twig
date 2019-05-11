@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You make a house home</title>
+    <link rel="stylesheet" href="css/Post-4.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+  <body>
+      <section class="site-title">
+            <p class="site-title__header">Enjoy The Silence</p>
+            <i class="site-title__subheader">Eva's blog</i>
+      </section>
+      <header class="top-menu">  
+        <nav>
+            <ul>
+                <li class="top-menu__item">
+                    <i class="fas fa-bars"></i>
+                </li>
+                <li class="top-menu__item">
+                    <a href="index.php">home</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#">All posts</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#">about</a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#">contact</a>
+                </li>
+                <?php if (!isset($_SESSION['username'])){ ?>
+                    <li class="top-menu__item">
+                        <a href="Registration">Authorization</a>
+                    </li>
+
+                <?php } elseif (isset($_SESSION['username'])){ ?>
+                    <li class="top-menu__item">
+                        <a href="#"><?php print $_SESSION["username"] ?></a>
+                    </li>
+                    <li class="top-menu__item">
+                        <a href="Logout">Log out</a>
+                    </li>
+                <?php }; ?>
+                <li class="top-menu__item">
+                    <i class="fas fa-search"></i>
+                </li>
+                <li class="top-menu__item">
+                    <section class="top-menu__items--links">
+                        <a class="fab fa-telegram"></a>
+                        <a class="fab fa-instagram" href="https://www.instagram.com/ewagulida/"></a>
+                        <a class="fab fa-facebook" href="https://www.facebook.com/ewa.gulida/"></a>
+                        <a class="fab fa-pinterest"></a>
+                    </section>
+                </li>
+            </ul>
+        </nav>    
+      </header>
+      <figure class="head-photo">
+        <img src="img/home.jpg">
+      </figure>
+      <section class="main">
+        <p class="main__title">YOU MAKE A HOUSE A HOME</p>
+        <p class="main__date">8 SEPTEMBER 2017</p>
+        <article class="main__1">
+            <p>Feeling cosy and totally comfortable at home is an absolute must for me. If I do not – I start being moody, moany and so on – you do not want to deal with me in that state of mind.</p>
+            <p>When I first moved out of my parents’ house and into a student dorm I was stressed to say the least. During one day I moved to another city where I had no one, to the student dorm with poor conditions into the room which I had to share with two other girls who were complete strangers at the moment. I was overwhelmed and all I wanted to do was pack my stuff and go back to my bellowed home. But I did not.</p>
+            <p>I spent half a year moaning and pitting myself, crying and trying to convince my parents to let me rent an apartment (by let I mean ‘give me money’), but they didn’t budge. One day as I was particularly upset about something one of my friends asked how I liked living in a dorm. I did not. For the next half an hour (or even more) she became my shoulder to cry on and after that she gave me one of the most valuable pieces of advice I ever got:</p>
+        </article>
+        <p class="main__subtitle">You make a house your home. It’s always up to you.</p>
+        <article>
+            <p>
+                I lacked cosiness and utility my parents’ house provided. I gave it some thought, browsed Pinterest for ideas and made it feel like home. Surprisingly back then I needed a couple of postcards to hang on a wall, a plant to liven up a room and several photos of my friends and family to put on a bedside table.
+            </p>
+        </article>
+        <img src="img/view-3.jpg">
+        <article>
+            <p>These are such small details, but they have become a key to making me feel good.</p>
+        </article>
+        <img src="img/home-1.jpg">
+        <article>
+            <p>
+                    With this post I’ll start series of posts about interior inspirations (swooning over Pinterest & Instagram pictures) and what I do to get that much needed homey feeling in the apartment I’ve just moved into. So, hang on here and see what I’m up to. Hopefully I inspired or helped someone who knew smth was wrong, but didn’t realise what exactly. Please comment below if you have any tips or recommendations.
+            </p>
+        </article>
+        <img src="img/home-1.png">
+    </section>
+        <footer class="footer">
+        <section class="older-posts">
+            <input type="button" value="HOME"></input>
+            <a href="MainPage.html"></a>
+        </section>
+        <section class="body-bottom">
+            <section class="body-bottom__snapchat">
+                <div class="body-bottom__snapchat--line">
+                    <span>SNAPCHAT</span>
+                </div>
+                <img src="img/snapchat.jpg">
+            </section>
+            <section class="body-bottom__follow">
+                <div class="body-bottom__follow--line">
+                    <span>FOLLOW</span>
+                </div>
+                <section class="social-networks">
+                    <section class="social-networks__first">
+                        <a class="fab fa-twitter"></a>
+                        <a class="fab fa-instagram"></a>
+                        <a class="fab fa-facebook"></a>
+                    </section>
+                    <section class="social-networks__first-names">
+                        <span>TWITTER</span>
+                        <span>INSTAGRAM</span>
+                        <span>FACEBOOK</span>
+                    </section>
+                    <section class="social-networks__second">
+                        <a class="fab fa-pinterest"></a>
+                        <a class="fab fa-youtube"></a>
+                        <a class="fab fa-snapchat"></a>
+                    </section>
+                    <section class="social-networks__second-names">
+                            <span>PINTEREST</span>
+                            <span>YOUTUBE</span>
+                            <span>SNAPCHAT</span>
+                        </section>
+                </section>
+            </section>
+            <section class="body-bottom__follow">
+                    <div class="body-bottom__follow--line">
+                            <span>ENJOY THE SILENCE</span>
+                    </div>
+                    <section class="body-bottom__follow--content">
+                        <span>Sign up here for a weekly catch up of everything EnjoyTheSilence</span>
+                        <input type="email" placeholder="Your email..." class="email">
+                        <input type="button" value="SUBSCRIBE" class="btn-subscribe">
+                    </section>
+            </section>
+        </section>
+        <p class="site-footer">© 2019 EnjoyTheSilence</p>  
+        <figure class="footer__pictures">
+            <img src="img/cookie.jpg">
+            <img src="img/ewa-2.jpg">
+            <img src="img/piones.jpg">
+            <img src="img/view.jpg">
+            <img src="img/ewa-4.jpg">
+        </figure>  
+        <p>Design by Marta Gulida</p>
+      </footer>
+  </body>
+</html>
