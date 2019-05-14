@@ -1,2 +1,2 @@
 # userBlog
-Blog in PHP using Symfony 4, SonataAdminBundle, SonataUserBundle.
+Blog in PHP using Symfony 4, SonataAdminBundle, PHPUnit.
